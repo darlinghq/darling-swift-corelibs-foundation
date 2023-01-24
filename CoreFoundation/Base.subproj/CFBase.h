@@ -667,6 +667,11 @@ void CFRelease(CFTypeRef cf);
 CF_EXPORT
 CFTypeRef CFAutorelease(CFTypeRef CF_RELEASES_ARGUMENT arg) API_AVAILABLE(macos(10.9), ios(7.0), watchos(2.0), tvos(9.0));
 
+#ifdef DARLING
+// needed for IOKit
+#define CFRELEASE_IF_NOT_NULL(x) if (x) CFRelease(x)
+#endif
+
 CF_EXPORT
 CFIndex CFGetRetainCount(CFTypeRef cf);
 #endif

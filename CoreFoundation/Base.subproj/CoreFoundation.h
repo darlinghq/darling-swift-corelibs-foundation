@@ -55,6 +55,9 @@
 #include <CoreFoundation/CFDateFormatter.h>
 #include <CoreFoundation/CFDictionary.h>
 #include <CoreFoundation/CFError.h>
+#ifdef DARLING
+#include <CoreFoundation/CFFileDescriptor.h>
+#endif
 #include <CoreFoundation/CFLocale.h>
 #include <CoreFoundation/CFNumber.h>
 #include <CoreFoundation/CFNumberFormatter.h>
@@ -80,9 +83,15 @@
 #include <CoreFoundation/CFStream.h>
 #include <CoreFoundation/CFSocket.h>
 #include <CoreFoundation/CFMachPort.h>
+#ifdef DARLING
+#include <CoreFoundation/CFXPCBridge.h>
+#endif
 
 #include <CoreFoundation/CFAttributedString.h>
 #include <CoreFoundation/CFNotificationCenter.h>
+#ifdef DARLING
+#include <CoreFoundation/CFURLEnumerator.h>
+#endif
 
 #endif
 
