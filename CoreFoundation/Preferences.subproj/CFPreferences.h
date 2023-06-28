@@ -121,6 +121,9 @@ all arguments must be non-NULL */
 CF_EXPORT
 _Nullable CFArrayRef CFPreferencesCopyKeyList(CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 
+#ifdef DARLING
+Boolean CFPreferencesAppValueIsForced(CFStringRef key, CFStringRef applicationID);
+#endif
 
 CF_EXTERN_C_END
 CF_ASSUME_NONNULL_END
