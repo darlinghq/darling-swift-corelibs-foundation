@@ -43,6 +43,7 @@
 #endif
 
 #include <CoreFoundation/CFBase.h>
+#include <CoreFoundation/CFCGTypes.h>
 #include <CoreFoundation/CFArray.h>
 #include <CoreFoundation/CFBag.h>
 #include <CoreFoundation/CFBinaryHeap.h>
