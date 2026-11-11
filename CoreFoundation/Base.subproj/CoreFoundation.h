@@ -43,6 +43,7 @@
 #endif
 
 #include <CoreFoundation/CFBase.h>
+#include <CoreFoundation/CFCGTypes.h>
 #include <CoreFoundation/CFArray.h>
 #include <CoreFoundation/CFBag.h>
 #include <CoreFoundation/CFBinaryHeap.h>
@@ -67,6 +68,9 @@
 #include <CoreFoundation/CFPropertyList.h>
 #include <CoreFoundation/CFSet.h>
 #include <CoreFoundation/CFString.h>
+#if __has_include(<CoreFoundation/CFStringTokenizer.h>)
+#include <CoreFoundation/CFStringTokenizer.h>
+#endif
 #include <CoreFoundation/CFStringEncodingExt.h>
 #include <CoreFoundation/CFTimeZone.h>
 #include <CoreFoundation/CFTree.h>
