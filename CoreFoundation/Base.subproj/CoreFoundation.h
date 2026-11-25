@@ -100,6 +100,7 @@
 #endif
 
 #if TARGET_OS_OSX || TARGET_OS_IPHONE
+#include <CoreFoundation/CFFileSecurity.h>
 #endif
 
 #include <CoreFoundation/CFUserNotification.h>
